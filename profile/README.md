@@ -9,9 +9,32 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
-[Why Delta Prime](#why-delta-prime) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Projects](#projects)
+[The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Projects](#projects)
 
 </div>
+
+<br />
+
+## The Problem
+
+AI agents forget. Every conversation starts from zero. Context windows fill up and overflow. Facts learned yesterday contradict facts learned today, with no mechanism to reconcile them.
+
+**This is context rot** &mdash; the systematic degradation of an agent's ability to reason coherently as its operational history grows. Current systems commit a category error: they apply identical update mechanics to facts, experiences, and inferences, when each requires distinct persistence semantics.
+
+<br />
+
+## Philosophy
+
+We build on the [four-layer cognitive decomposition](https://arxiv.org/abs/2604.11364) proposed by Roynard (2026), which identifies the missing knowledge layer in cognitive architectures:
+
+| Layer | Persistence | What It Holds |
+|-------|-------------|---------------|
+| **Memory** | Ebbinghaus decay | Raw experiences, observations, context |
+| **Intelligence** | Ephemeral | Active inference, working memory |
+| **Wisdom** | Evidence-gated | Validated patterns, curated insights |
+| **Meta-Memory** | Indefinite | Facts with bi-temporal supersession |
+
+The insight: *different types of knowledge require different update mechanics*. A fact shouldn't decay like a memory. A pattern shouldn't update like an observation. Delta Prime implements this separation.
 
 <br />
 
