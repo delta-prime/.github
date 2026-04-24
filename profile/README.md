@@ -201,9 +201,14 @@ flowchart TB
 
 ---
 
-<div align="center">
+<p align="center">
+  <img src="../media/footer.svg" width="800">
+</p>
 
-**Cognition infrastructure. Context rot's cure.**
+<p align="center">
+  <i>"Cognition infrastructure. Context rot's cure."</i>
+</p>
 
-<sub>MIT License &bull; Delta Prime Labs &bull; 2026</sub>
-</div>
+<p align="center">
+  <sub>Delta Prime Labs &bull; 2026</sub>
+</p>
