@@ -8,12 +8,6 @@
 
 Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
-<br />
-
-![Status](https://img.shields.io/badge/status-stealth%20%C2%B7%20pre--alpha-f78166?style=flat-square)
-
-<br />
-
 [The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Contact](#contact)
 
 </div>
@@ -191,15 +185,6 @@ flowchart TB
 Watch this space &mdash; or [reach out](#contact) if you'd like an early look.
 
 </div>
-
-<br />
-
-## Contact
-
-- **Discussions** &mdash; [github.com/orgs/delta-prime/discussions](https://github.com/orgs/delta-prime/discussions)
-- **Email** &mdash; [mr.nerd.study@gmail.com](mailto:mr.nerd.study@gmail.com)
-
-<br />
 
 ---
 
