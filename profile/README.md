@@ -9,7 +9,7 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
-[Projects](#projects) &nbsp;&bull;&nbsp; [Architecture](#architecture) &nbsp;&bull;&nbsp; [Quick Start](#quick-start)
+[Why Delta Prime](#why-delta-prime) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Projects](#projects)
 
 </div>
 
@@ -138,7 +138,7 @@ flowchart TB
             INTEL --> MEM
         end
         
-        API[MCP / REST / GraphQL]
+        API[Interface Layer]
     end
 
     subgraph INFRA["Infrastructure"]
@@ -164,34 +164,9 @@ flowchart TB
 
 | Repository | Description |
 |------------|-------------|
-| **[contextr](https://github.com/delta-prime/contextr)** | External Graph-RAG memory layer with MCP support |
-| **specifications** | Bi-temporal AI context and graph clustering standards |
-| **adaptors** | Bridge implementations for REST, MCP, and GraphQL |
-
-<br />
-
-## Quick Start
-
-```bash
-# Ingest a codebase into persistent memory
-uv run python -m cli ingest ./src --session-id my-project
-
-# Semantic search
-uv run python -m cli lookup "authentication flow"
-```
-
-**Connect Claude Code via MCP:**
-
-```json
-{
-  "mcpServers": {
-    "contextr": {
-      "type": "http",
-      "url": "http://localhost:8000/mcp"
-    }
-  }
-}
-```
+| **[contextr](https://github.com/delta-prime/contextr)** | The cognitive memory layer for AI agents |
+| **specifications** | Bi-temporal context and knowledge graph standards |
+| **adaptors** | Integration bridges for agent frameworks |
 
 <br />
 
