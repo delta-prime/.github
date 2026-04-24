@@ -23,6 +23,24 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="bloom">
+      <feGaussianBlur stdDeviation="0" result="blur">
+        <animate attributeName="stdDeviation" values="0;3;0" dur="6s" repeatCount="indefinite"/>
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bloom2">
+      <feGaussianBlur stdDeviation="0" result="blur">
+        <animate attributeName="stdDeviation" values="0;3;0" dur="6s" repeatCount="indefinite" begin="3s"/>
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
     <clipPath id="banner-clip">
       <rect width="800" height="200" rx="8"/>
     </clipPath>
@@ -72,8 +90,15 @@
     <!-- Main title -->
     <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f0f6fc" letter-spacing="-0.02em">DELTA PRIME</text>
 
-    <!-- Subtitle with gradient -->
-    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.15em">PERSISTENT AI MEMORY INFRASTRUCTURE</text>
+    <!-- Cycling taglines with dissolve/bloom -->
+    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em" filter="url(#bloom)">
+      COGNITION INFRASTRUCTURE. CONTEXT ROT'S CURE.
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em" filter="url(#bloom2)">
+      BUILDING THE COGNITIVE BACKBONE FOR AI
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4;0.5;0.9;1" dur="6s" repeatCount="indefinite"/>
+    </text>
 
     <!-- Decorative line -->
     <line x1="140" y1="140" x2="450" y2="140" stroke="url(#accent-grad)" stroke-width="1" opacity="0.5">

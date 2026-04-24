@@ -4,8 +4,8 @@
 
 <br /><br />
 
-**Persistent memory infrastructure for AI agents.**<br />
-We solve context rot by storing enriched semantic data in external, bi-temporal knowledge graphs.
+**Cognition infrastructure. Context rot's cure.**<br />
+Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
