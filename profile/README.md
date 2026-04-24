@@ -2,16 +2,15 @@
 
 <img src="../media/banner.svg" alt="Delta Prime" width="800" />
 
-<br /><br />
+### *Cognition without continuity is just computation.*
 
-**Cognition infrastructure. Context rot's cure.**<br />
+<br />
+
 Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
-### *Cognition without continuity is just computation.*
 
-<br />
 
 [The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Projects](#projects)
 
@@ -203,5 +202,8 @@ flowchart TB
 ---
 
 <div align="center">
-  <sub>MIT License &bull; Delta Prime Labs &bull; 2026</sub>
+
+**Cognition infrastructure. Context rot's cure.**
+
+<sub>MIT License &bull; Delta Prime Labs &bull; 2026</sub>
 </div>
