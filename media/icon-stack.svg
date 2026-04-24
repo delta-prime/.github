@@ -1,0 +1,65 @@
+<svg fill="none" viewBox="0 0 800 180" width="800" height="180" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .stack-container {
+          font-family: 'JetBrains Mono', 'Fira Code', monospace;
+          color: #c9d1d9;
+          background: transparent;
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+        }
+        .category {
+          width: 30%;
+          border-left: 2px solid #30363d;
+          padding-left: 15px;
+        }
+        .category-title {
+          font-size: 10px;
+          color: #8b949e;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          margin-bottom: 15px;
+        }
+        .item {
+          font-size: 13px;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+        }
+        .item-accent {
+          color: #58a6ff;
+          margin-right: 8px;
+          font-weight: bold;
+        }
+
+        @media (prefers-color-scheme: light) {
+          .stack-container { color: #24292f; }
+          .category { border-left-color: #d0d7de; }
+          .item-accent { color: #0969da; }
+        }
+      </style>
+      <div class="stack-container">
+        <div class="category">
+          <div class="category-title">01 / Graph Engine</div>
+          <div class="item"><span class="item-accent">::</span> MEMGRAPH</div>
+          <div class="item"><span class="item-accent">::</span> NEO4J</div>
+          <div class="item"><span class="item-accent">::</span> CYPHER</div>
+        </div>
+        <div class="category">
+          <div class="category-title">02 / Semantic Layer</div>
+          <div class="item"><span class="item-accent">::</span> QDRANT</div>
+          <div class="item"><span class="item-accent">::</span> JINA</div>
+          <div class="item"><span class="item-accent">::</span> FASTAPI</div>
+        </div>
+        <div class="category">
+          <div class="category-title">03 / Interfaces</div>
+          <div class="item"><span class="item-accent">::</span> MCP</div>
+          <div class="item"><span class="item-accent">::</span> PYTHON</div>
+          <div class="item"><span class="item-accent">::</span> REDIS</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
