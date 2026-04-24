@@ -9,6 +9,10 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
+### *Cognition without continuity is just computation.*
+
+<br />
+
 [The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Projects](#projects)
 
 </div>
