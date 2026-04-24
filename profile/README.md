@@ -15,57 +15,147 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
-## Features
+## Why Delta Prime
 
-- **Graph-RAG Context Storage** &mdash; Memgraph + Qdrant for relational, searchable memory
-- **Bi-Temporal Tracking** &mdash; Valid time vs. system time history for context evolution  
-- **MCP Integrations** &mdash; Drop-in memory layer for Claude Code and other AI agents
-- **GraphRAG Clustering** &mdash; Hierarchical summaries with automatic entity extraction
+- **Memory** &mdash; Graph + vector storage for entities, facts, and events
+- **Intelligence** &mdash; Automatic entity extraction and relationship discovery
+- **Wisdom** &mdash; GraphRAG clustering surfaces patterns and hierarchical insights
+- **Meta-Memory** &mdash; Bi-temporal tracking knows what you knew, and when
 
 <br />
 
-## Architecture
+## The Cognitive Stack
+
+<table>
+<tr>
+<td width="50%">
+
+### Memory
+*Raw context persistence*
+
+```mermaid
+flowchart LR
+    subgraph MEMORY["Memory Layer"]
+        direction TB
+        E[Entities] --> G[(Graph)]
+        F[Facts] --> G
+        V[Events] --> G
+        G --> S[(Vectors)]
+    end
+    
+    style MEMORY fill:#0d1117,stroke:#58a6ff
+```
+
+Storage of atomic context: entities, facts, events, and their embeddings. The foundation everything else builds on.
+
+</td>
+<td width="50%">
+
+### Intelligence
+*Understanding through structure*
+
+```mermaid
+flowchart LR
+    subgraph INTEL["Intelligence Layer"]
+        direction TB
+        X[Extract] --> R[Relate]
+        R --> C[Cluster]
+        C --> E[Embed]
+    end
+    
+    style INTEL fill:#0d1117,stroke:#a371f7
+```
+
+Entity extraction, relationship discovery, semantic clustering. Turning raw text into structured knowledge.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Wisdom
+*Patterns and insights*
+
+```mermaid
+flowchart LR
+    subgraph WISDOM["Wisdom Layer"]
+        direction TB
+        P[Patterns] --> H[Hierarchies]
+        H --> I[Insights]
+        I --> S[Summaries]
+    end
+    
+    style WISDOM fill:#0d1117,stroke:#3fb950
+```
+
+GraphRAG clustering builds hierarchical summaries. Emergent patterns surface from connected context.
+
+</td>
+<td width="50%">
+
+### Meta-Memory
+*Context about context*
+
+```mermaid
+flowchart LR
+    subgraph META["Meta-Memory Layer"]
+        direction TB
+        VT[Valid Time] --> BT{Bi-Temporal}
+        ST[System Time] --> BT
+        BT --> H[History]
+    end
+    
+    style META fill:#0d1117,stroke:#f78166
+```
+
+Bi-temporal tracking: what was true vs. when we learned it. Enables reasoning about knowledge evolution.
+
+</td>
+</tr>
+</table>
+
+<br />
+
+### System Architecture
 
 ```mermaid
 flowchart TB
-    subgraph AGENTS["<b>Agent Layer</b>"]
-        direction LR
+    subgraph AGENTS["Agents"]
         A1[Claude Code]
         A2[Custom Agents]
-        A3[Workflows]
     end
 
-    subgraph INTERFACE["<b>Interface Layer</b>"]
+    subgraph DELTA["Delta Prime"]
+        direction TB
+        subgraph COGNITIVE["Cognitive Engine"]
+            META[Meta-Memory]
+            WISDOM[Wisdom]
+            INTEL[Intelligence]
+            MEM[Memory]
+            
+            META --> WISDOM
+            WISDOM --> INTEL
+            INTEL --> MEM
+        end
+        
+        API[MCP / REST / GraphQL]
+    end
+
+    subgraph INFRA["Infrastructure"]
         direction LR
-        I1[MCP Server]
-        I2[REST API]
-        I3[GraphQL]
+        MG[(Memgraph)]
+        QD[(Qdrant)]
+        RD[(Redis)]
     end
 
-    subgraph PROCESSING["<b>Processing Layer</b>"]
-        direction LR
-        P1[Entity Extraction]
-        P2[Embeddings]
-        P3[Clustering]
-        P4[Bi-Temporal Logic]
-    end
-
-    subgraph STORAGE["<b>Storage Layer</b>"]
-        direction LR
-        S1[(Memgraph<br/>Graph DB)]
-        S2[(Qdrant<br/>Vectors)]
-        S3[(Redis<br/>Cache)]
-    end
-
-    AGENTS --> INTERFACE
-    INTERFACE --> PROCESSING
-    PROCESSING --> STORAGE
-    STORAGE -.->|"context retrieval"| INTERFACE
+    AGENTS <--> API
+    API <--> COGNITIVE
+    COGNITIVE <--> INFRA
     
     style AGENTS fill:#1f2937,stroke:#58a6ff,color:#f0f6fc
-    style INTERFACE fill:#1f2937,stroke:#a371f7,color:#f0f6fc
-    style PROCESSING fill:#1f2937,stroke:#3fb950,color:#f0f6fc
-    style STORAGE fill:#1f2937,stroke:#f78166,color:#f0f6fc
+    style DELTA fill:#1f2937,stroke:#a371f7,color:#f0f6fc
+    style COGNITIVE fill:#161b22,stroke:#3fb950,color:#f0f6fc
+    style INFRA fill:#1f2937,stroke:#f78166,color:#f0f6fc
 ```
 
 <br />
