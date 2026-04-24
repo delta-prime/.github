@@ -17,24 +17,27 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 ## The Problem
 
-AI agents forget. Every conversation starts from zero. Context windows fill up and overflow. Facts learned yesterday contradict facts learned today, with no mechanism to reconcile them.
+> *"Current systems create a category error: they apply cognitive decay to factual claims, or treat facts and experiences with identical update mechanics."*
+> &mdash; [Roynard, 2026](https://arxiv.org/abs/2604.11364)
 
-**This is context rot** &mdash; the systematic degradation of an agent's ability to reason coherently as its operational history grows. Current systems commit a category error: they apply identical update mechanics to facts, experiences, and inferences, when each requires distinct persistence semantics.
+AI agents forget. Context windows overflow. Facts contradict without reconciliation. This is **context rot** &mdash; the systematic degradation of coherent reasoning as operational history grows.
+
+The root cause: applying uniform persistence to fundamentally different types of knowledge. Gaussian decay is correct for experiences. It's wrong for facts.
 
 <br />
 
 ## Philosophy
 
-We build on the [four-layer cognitive decomposition](https://arxiv.org/abs/2604.11364) proposed by Roynard (2026), which identifies the missing knowledge layer in cognitive architectures:
+We implement the [four-layer cognitive decomposition](https://arxiv.org/abs/2604.11364) that identifies the missing knowledge layer in cognitive architectures:
 
-| Layer | Persistence | What It Holds |
-|-------|-------------|---------------|
-| **Memory** | Ebbinghaus decay | Raw experiences, observations, context |
-| **Intelligence** | Ephemeral | Active inference, working memory |
-| **Wisdom** | Evidence-gated | Validated patterns, curated insights |
-| **Meta-Memory** | Indefinite | Facts with bi-temporal supersession |
+| Layer | Persistence Semantics | Examples |
+|-------|----------------------|----------|
+| **Memory** | Ebbinghaus decay &mdash; experiences fade | "User asked about auth on 2026-04-21" |
+| **Knowledge** | Indefinite supersession &mdash; facts persist until contradicted | "OAuth tokens expire in 30 days" |
+| **Wisdom** | Evidence-gated revision &mdash; beliefs update on evidence, not time | "This team ships on Fridays" |
+| **Intelligence** | Ephemeral inference &mdash; per-session working memory | "For this query, I considered A, B, C" |
 
-The insight: *different types of knowledge require different update mechanics*. A fact shouldn't decay like a memory. A pattern shouldn't update like an observation. Delta Prime implements this separation.
+Different knowledge types require different update mechanics. A fact shouldn't decay like a memory. A pattern shouldn't update like an observation. Contradictions create supersession edges, not silent overwrites.
 
 <br />
 
