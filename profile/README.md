@@ -10,9 +10,11 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 
 <br />
 
+![Status](https://img.shields.io/badge/status-stealth%20%C2%B7%20pre--alpha-f78166?style=flat-square)
 
+<br />
 
-[The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Projects](#projects)
+[The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Contact](#contact)
 
 </div>
 
@@ -41,15 +43,6 @@ We implement the [four-layer cognitive decomposition](https://arxiv.org/abs/2604
 | **Intelligence** | Ephemeral inference &mdash; per-session working memory | "For this query, I considered A, B, C" |
 
 Different knowledge types require different update mechanics. A fact shouldn't decay like a memory. A pattern shouldn't update like an observation. Contradictions create supersession edges, not silent overwrites.
-
-<br />
-
-## Why Delta Prime
-
-- **Memory** &mdash; Graph + vector storage for entities, facts, and events
-- **Intelligence** &mdash; Automatic entity extraction and relationship discovery
-- **Wisdom** &mdash; GraphRAG clustering surfaces patterns and hierarchical insights
-- **Meta-Memory** &mdash; Bi-temporal tracking knows what you knew, and when
 
 <br />
 
@@ -189,13 +182,22 @@ flowchart TB
 
 <br />
 
-## Projects
+## Coming Soon
 
-| Repository | Description |
-|------------|-------------|
-| **[contextr](https://github.com/delta-prime/contextr)** | The cognitive memory layer for AI agents |
-| **specifications** | Bi-temporal context and knowledge graph standards |
-| **adaptors** | Integration bridges for agent frameworks |
+<div align="center">
+
+*We're building in stealth. First repositories drop soon.*
+
+Watch this space &mdash; or [reach out](#contact) if you'd like an early look.
+
+</div>
+
+<br />
+
+## Contact
+
+- **Discussions** &mdash; [github.com/orgs/delta-prime/discussions](https://github.com/orgs/delta-prime/discussions)
+- **Email** &mdash; [mr.nerd.study@gmail.com](mailto:mr.nerd.study@gmail.com)
 
 <br />
 
