@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="media/banner.svg" alt="Delta Prime Banner" width="800" />
+<img src="../media/banner.svg" alt="Delta Prime Banner" width="800" />
 
 <br />
 
@@ -23,12 +23,12 @@ Traditional context is ephemeral. Delta Prime provides the permanent memory laye
 <table width="100%" border="0" cellspacing="0" cellpadding="20">
   <tr>
     <td width="50%" valign="top">
-      <img src="media/icon-core.svg" width="32" /><br />
+      <img src="../media/icon-core.svg" width="32" /><br />
       <h3>Graph-RAG Engine</h3>
       Powered by <strong>contextr</strong>, our core service uses Memgraph and Qdrant to create a relational, searchable memory bank for any LLM.
     </td>
     <td width="50%" valign="top">
-      <img src="media/icon-core.svg" width="32" /><br />
+      <img src="../media/icon-core.svg" width="32" /><br />
       <h3>Bi-Temporal Tracking</h3>
       We maintain a separate history for valid time vs. system time, allowing agents to understand how information has evolved over its lifecycle.
     </td>
