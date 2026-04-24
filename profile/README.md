@@ -4,15 +4,9 @@
 
 ### *Cognition without continuity is just computation.*
 
-<br />
-
-Building the cognitive backbone for AI through bi-temporal knowledge graphs.
-
 [The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Contact](#contact)
 
 </div>
-
-<br />
 
 ## The Problem
 
@@ -22,8 +16,6 @@ Building the cognitive backbone for AI through bi-temporal knowledge graphs.
 AI agents forget. Context windows overflow. Facts contradict without reconciliation. This is **context rot** &mdash; the systematic degradation of coherent reasoning as operational history grows.
 
 The root cause: applying uniform persistence to fundamentally different types of knowledge. Gaussian decay is correct for experiences. It's wrong for facts.
-
-<br />
 
 ## Philosophy
 
