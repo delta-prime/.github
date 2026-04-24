@@ -1,69 +1,77 @@
-<p align="center">
-  <img src="media/banner.svg" width="800">
-</p>
+<div align="center">
 
-<p align="center">
-  <b>AGENTIC MEMORY ARCHITECTURE | BI-TEMPORAL CONTEXT ENGINEERING</b><br>
-  <i>Eliminating context rot through externalized semantic graphs.</i>
-</p>
+<img src="media/banner.svg" alt="Delta Prime Banner" width="800" />
 
----
+<br />
 
-### CORE THESIS
-**Delta Prime** builds the infrastructure for persistent, high-fidelity AI memory. We solve the "context rot" problem by moving enriched semantic context out of the ephemeral conversation window and into a bi-temporal knowledge graph.
+# Persistent AI Memory Infrastructure
+Delta Prime builds the infrastructure for persistent, high-fidelity context storage. We solve context rot by moving enriched semantic data into external, bi-temporal knowledge graphs.
+
+[Explore Projects](#projects) • [Specifications](#specs) • [Get Started](#start)
 
 ---
 
-### INFRASTRUCTURE STACK
+</div>
 
-<p align="center">
-  <img src="media/icon-stack.svg" width="800">
-</p>
+<br />
 
----
+## High-Fidelity Context Management
+Traditional context is ephemeral. Delta Prime provides the permanent memory layer needed for autonomous systems to reason across sessions, projects, and environments.
 
-### FLAGSHIP IMPLEMENTATIONS
+<br />
 
-<details open>
-<summary><b>01 // CONTEXTR</b></summary>
-<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td width="50%" valign="top">
+      <img src="media/icon-core.svg" width="32" /><br />
+      <h3>Graph-RAG Engine</h3>
+      Powered by <strong>contextr</strong>, our core service uses Memgraph and Qdrant to create a relational, searchable memory bank for any LLM.
+    </td>
+    <td width="50%" valign="top">
+      <img src="media/icon-core.svg" width="32" /><br />
+      <h3>Bi-Temporal Tracking</h3>
+      We maintain a separate history for valid time vs. system time, allowing agents to understand how information has evolved over its lifecycle.
+    </td>
+  </tr>
+</table>
 
-Our core engine for Graph-RAG based context management. It transforms raw interactions into a structured, searchable, and relational memory bank.
+<br />
 
-- **RELATIONAL MEMORY:** Deep relationship traversal powered by Memgraph.
-- **SEMANTIC RETRIEVAL:** Qdrant-backed vector search with Jina embeddings.
-- **TEMPORAL LINEAGE:** Separate tracking for event occurrence and system recording.
-- **PROTOCOL NATIVE:** Native support for the Model Context Protocol (MCP).
+## Core Architecture
+We believe context is a living network of entities and events, not a flat list of text chunks.
 
-[View Repository](https://github.com/delta-prime/contextr)
-</details>
+```mermaid
+graph TD
+    A[Autonomous Agent] --> B[Delta Prime Layer]
+    B --> C[(Relational Graph)]
+    B --> D[(Vector Store)]
+    C --- E[Persistent Memory]
+    D --- E
+    E --> A
+```
 
-<details>
-<summary><b>02 // RESEARCH & STANDARDS</b></summary>
-<br>
+<br />
 
-- **BI-TEMPORAL SPEC:** Standardizing how AI memory tracks "valid time" vs "system time".
-- **GRAPH CLUSTERING:** Hierarchical summarization techniques for infinite context windows.
-- **MCP ADAPTORS:** Reference implementations for high-density tool-calling.
-</details>
+## Projects & Standards
 
----
+| Repository | Purpose |
+| :--- | :--- |
+| **[contextr](https://github.com/delta-prime/contextr)** | Externalized memory layer with Graph-RAG and MCP support. |
+| **specifications** | Drafts for bi-temporal AI context and graph clustering standards. |
+| **adaptors** | High-performance bridge implementations for REST, MCP, and GraphQL. |
 
-### IMPLEMENTATION
+<br />
+
+## Implementation
+Tools are distributed via the `contextr` ecosystem.
 
 ```bash
-# Ingest codebase into the memory layer
-uv run python -m cli ingest ./path/to/source --session-id "sync-01"
+# Sync your project into the persistent memory layer
+uv run python -m cli ingest ./src --session-id "primary-sync"
 ```
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=delta-prime&theme=tokyonight&layout=compact&hide_border=true" />
-</p>
-
-<br>
-
-<p align="center">
-  <i>"STRUCTURING AGENTIC INTELLIGENCE."</i>
-</p>
+<div align="center">
+  <small>&copy; 2026 Delta Prime Labs</small>
+</div>
