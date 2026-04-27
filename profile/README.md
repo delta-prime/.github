@@ -160,7 +160,7 @@ flowchart TB
     subgraph DELTA["Delta Prime"]
         direction TB
         
-        subgraph META["Meta-Memory · provenance · time-travel · reflection"]
+        subgraph META["Meta-Memory]
             subgraph COGNITIVE["Cognitive Stack"]
                 direction TB
                 MEM[Memory]
