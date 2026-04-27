@@ -129,7 +129,7 @@ Per-session reasoning chains. Ephemeral by design &mdash; only crystallized conc
 
 ```mermaid
 flowchart LR
-    subgraph META["Meta-Memory"]
+    subgraph META["&nbsp;&nbsp;Meta-Memory&nbsp;&nbsp;"]
         direction LR
         P[Provenance] --> T[Time-Travel]
         T --> R[Reflection]
@@ -160,9 +160,9 @@ flowchart TB
     subgraph DELTA["Delta Prime"]
         direction TB
         
-        subgraph META["Meta-Memory"]
+        subgraph META["&nbsp;&nbsp;Meta-Memory&nbsp;&nbsp;"]
             direction LR
-            subgraph COGNITIVE["Cognitive Stack"]
+            subgraph COGNITIVE["&nbsp;&nbsp;Cognitive Stack&nbsp;&nbsp;"]
                 direction LR
                 MEM[Memory]
                 KNOW[Knowledge]
