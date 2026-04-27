@@ -159,42 +159,40 @@ flowchart TB
 
     subgraph DELTA["Delta Prime"]
         direction TB
-        subgraph COGNITIVE["Cognitive Engine"]
-            direction TB
-            MEM[Memory]
-            KNOW[Knowledge]
-            WIS[Wisdom]
-            INTEL[Intelligence]
-            META[Meta-Memory]
-            
-            MEM --> KNOW
-            KNOW --> WIS
-            WIS --> INTEL
-            META -.-> MEM
-            META -.-> KNOW
-            META -.-> WIS
-            META -.-> INTEL
+        
+        subgraph META["Meta-Memory · provenance · time-travel · reflection"]
+            subgraph COGNITIVE["Cognitive Stack"]
+                direction TB
+                MEM[Memory]
+                KNOW[Knowledge]
+                WIS[Wisdom]
+                INTEL[Intelligence]
+                
+                MEM --> KNOW
+                KNOW --> WIS
+                WIS --> INTEL
+            end
         end
         
-        API[Interface Layer]
+        API[MCP Interface]
     end
 
     subgraph INFRA["Infrastructure"]
         direction LR
-        MG[(Memgraph)]
-        QD[(Qdrant)]
-        RD[(Redis)]
+        GR[(Graph Store)]
+        VE[(Vector Store)]
+        CA[(Cache)]
     end
 
     AGENTS <--> API
-    API <--> COGNITIVE
-    COGNITIVE <--> INFRA
+    API <--> META
+    META <--> INFRA
     
     style AGENTS fill:#1f2937,stroke:#58a6ff,color:#f0f6fc
     style DELTA fill:#1f2937,stroke:#a371f7,color:#f0f6fc
+    style META fill:#1f2937,stroke:#d29922,color:#f0f6fc
     style COGNITIVE fill:#161b22,stroke:#3fb950,color:#f0f6fc
     style INFRA fill:#1f2937,stroke:#f78166,color:#f0f6fc
-    style META fill:#1f2937,stroke:#d29922,color:#f0f6fc
 ```
 
 <br />
