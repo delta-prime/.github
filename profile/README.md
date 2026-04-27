@@ -39,42 +39,42 @@ Different knowledge types require different update mechanics. A fact shouldn't d
 <td width="50%">
 
 ### Memory
-*Raw context persistence*
+*Experiences that fade*
 
 ```mermaid
 flowchart LR
     subgraph MEMORY["Memory Layer"]
         direction TB
-        E[Entities] --> G[(Graph)]
-        F[Facts] --> G
+        P[Passages] --> G[(Graph)]
         V[Events] --> G
+        U[Utterances] --> G
         G --> S[(Vectors)]
     end
     
     style MEMORY fill:#0d1117,stroke:#58a6ff
 ```
 
-Storage of atomic context: entities, facts, events, and their embeddings. The foundation everything else builds on.
+Raw experience storage: passages, events, utterances. Ebbinghaus decay — experiences fade with time.
 
 </td>
 <td width="50%">
 
-### Intelligence
-*Understanding through structure*
+### Knowledge
+*Facts that persist*
 
 ```mermaid
 flowchart LR
-    subgraph INTEL["Intelligence Layer"]
+    subgraph KNOW["Knowledge Layer"]
         direction TB
-        X[Extract] --> R[Relate]
-        R --> C[Cluster]
-        C --> E[Embed]
+        C[Claims] --> F[Facts]
+        F --> CI[Citations]
+        CI --> G[(Graph)]
     end
     
-    style INTEL fill:#0d1117,stroke:#a371f7
+    style KNOW fill:#0d1117,stroke:#a371f7
 ```
 
-Entity extraction, relationship discovery, semantic clustering. Turning raw text into structured knowledge.
+Extracted claims promoted to facts. Indefinite supersession &mdash; facts persist until contradicted, not until they age.
 
 </td>
 </tr>
@@ -82,45 +82,69 @@ Entity extraction, relationship discovery, semantic clustering. Turning raw text
 <td width="50%">
 
 ### Wisdom
-*Patterns and insights*
+*Beliefs that revise*
 
 ```mermaid
 flowchart LR
     subgraph WISDOM["Wisdom Layer"]
         direction TB
         P[Patterns] --> H[Hierarchies]
-        H --> I[Insights]
-        I --> S[Summaries]
+        H --> B[Beliefs]
+        B --> S[Summaries]
     end
     
     style WISDOM fill:#0d1117,stroke:#3fb950
 ```
 
-GraphRAG clustering builds hierarchical summaries. Emergent patterns surface from connected context.
+GraphRAG clustering surfaces emergent patterns. Beliefs update on evidence shift, not on time.
 
 </td>
 <td width="50%">
 
-### Meta-Memory
-*Context about context*
+### Intelligence
+*Ephemeral reasoning*
 
 ```mermaid
 flowchart LR
-    subgraph META["Meta-Memory Layer"]
+    subgraph INTEL["Intelligence Layer"]
         direction TB
-        VT[Valid Time] --> BT{Bi-Temporal}
-        ST[System Time] --> BT
-        BT --> H[History]
+        Q[Query] --> R[ReasoningChain]
+        R --> CR[Crystallizations]
+        CR --> K[(Knowledge)]
     end
     
-    style META fill:#0d1117,stroke:#f78166
+    style INTEL fill:#0d1117,stroke:#f78166
 ```
 
-Bi-temporal tracking: what was true vs. when we learned it. Enables reasoning about knowledge evolution.
+Per-session reasoning chains. Ephemeral by design &mdash; only crystallized conclusions survive the session.
 
 </td>
 </tr>
 </table>
+
+<br />
+
+### Meta-Memory
+*Provenance, time-travel, reflection*
+
+```mermaid
+flowchart LR
+    subgraph META["Meta-Memory"]
+        direction TB
+        P[Provenance] --> T[Time-Travel]
+        T --> R[Reflection]
+        R --> H[History]
+    end
+    
+    style META fill:#0d1117,stroke:#d29922
+```
+
+Cross-cutting capability spanning all four layers. Enables metacognition:
+- **Provenance**: "Why do I believe X?" &mdash; full citation chain to source
+- **Time-travel**: "What did I know last Tuesday?" &mdash; query historical state
+- **Reflection**: Agents store observations about their own cognition
+
+Bi-temporal tracking means every fact knows *when it was true* vs *when we learned it*.
 
 <br />
 
@@ -136,14 +160,20 @@ flowchart TB
     subgraph DELTA["Delta Prime"]
         direction TB
         subgraph COGNITIVE["Cognitive Engine"]
-            META[Meta-Memory]
-            WISDOM[Wisdom]
-            INTEL[Intelligence]
+            direction TB
             MEM[Memory]
+            KNOW[Knowledge]
+            WIS[Wisdom]
+            INTEL[Intelligence]
+            META[Meta-Memory]
             
-            META --> WISDOM
-            WISDOM --> INTEL
-            INTEL --> MEM
+            MEM --> KNOW
+            KNOW --> WIS
+            WIS --> INTEL
+            META -.-> MEM
+            META -.-> KNOW
+            META -.-> WIS
+            META -.-> INTEL
         end
         
         API[Interface Layer]
@@ -164,6 +194,7 @@ flowchart TB
     style DELTA fill:#1f2937,stroke:#a371f7,color:#f0f6fc
     style COGNITIVE fill:#161b22,stroke:#3fb950,color:#f0f6fc
     style INFRA fill:#1f2937,stroke:#f78166,color:#f0f6fc
+    style META fill:#1f2937,stroke:#d29922,color:#f0f6fc
 ```
 
 <br />
