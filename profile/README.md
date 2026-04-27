@@ -178,11 +178,9 @@ flowchart TB
         API[MCP Interface]
     end
 
-    subgraph INFRA["Infrastructure"]
+    subgraph INFRA["&nbsp;&nbsp;Infrastructure&nbsp;&nbsp;"]
         direction LR
-        GR[(Graph Store)]
-        VE[(Vector Store)]
-        CA[(Cache)]
+        GR[(Graph Store)] ~~~ VE[(Vector Store)] ~~~ CA[(Cache)]
     end
 
     AGENTS <--> API
