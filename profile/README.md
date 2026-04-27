@@ -4,7 +4,7 @@
 
 ### *Cognition without continuity is just computation.*
 
-[The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Contact](#contact)
+[The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Contact](mailto:khimanialiasgar@gmail.com)
 
 </div>
 
@@ -19,7 +19,7 @@ The root cause: applying uniform persistence to fundamentally different types of
 
 ## Philosophy
 
-We implement the [four-layer cognitive decomposition](https://arxiv.org/abs/2604.11364) that identifies the missing knowledge layer in cognitive architectures:
+We implement [Roynard's four-layer cognitive decomposition](https://arxiv.org/abs/2604.11364) that identifies the missing knowledge layer in cognitive architectures:
 
 | Layer | Persistence Semantics | Examples |
 |-------|----------------------|----------|
@@ -54,7 +54,7 @@ flowchart LR
     style MEMORY fill:#0d1117,stroke:#58a6ff
 ```
 
-Raw experience storage: passages, events, utterances. Ebbinghaus decay — experiences fade with time.
+Raw experience storage: passages, events, utterances. Ebbinghaus decay &mdash; experiences fade with time.
 
 </td>
 <td width="50%">
@@ -67,8 +67,8 @@ flowchart LR
     subgraph KNOW["Knowledge Layer"]
         direction TB
         C[Claims] --> F[Facts]
-        F --> CI[Citations]
-        CI --> G[(Graph)]
+        CI[Citations] --> F
+        F --> G[(Graph)]
     end
     
     style KNOW fill:#0d1117,stroke:#a371f7
@@ -96,7 +96,7 @@ flowchart LR
     style WISDOM fill:#0d1117,stroke:#3fb950
 ```
 
-GraphRAG clustering surfaces emergent patterns. Beliefs update on evidence shift, not on time.
+Graph clustering surfaces emergent patterns. Beliefs update on evidence shift, not on time.
 
 </td>
 <td width="50%">
@@ -183,7 +183,8 @@ flowchart TB
         GR[(Graph Store)] ~~~ VE[(Vector Store)] ~~~ CA[(Cache)]
     end
 
-    AGENTS <--> API
+    A1 <--> API
+    A2 <--> API
     API <--> META
     META <--> INFRA
     
@@ -202,7 +203,7 @@ flowchart TB
 
 *We're building in stealth. First repositories drop soon.*
 
-Watch this space &mdash; or [reach out](#contact) if you'd like an early look.
+Watch this space &mdash; or [reach out](mailto:khimanialiasgar@gmail.com) if you'd like an early look.
 
 </div>
 
