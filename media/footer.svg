@@ -16,14 +16,14 @@
         }
         .line {
           height: 1px;
-          background: linear-gradient(90deg, transparent, #58a6ff, #a371f7, transparent);
+          background: linear-gradient(90deg, transparent, #d29922, #f0883e, transparent);
           flex-grow: 1;
           margin: 0 20px;
         }
 
         @media (prefers-color-scheme: light) {
           .footer-container { color: #57606a; }
-          .line { background: linear-gradient(90deg, transparent, #0969da, #8250df, transparent); }
+          .line { background: linear-gradient(90deg, transparent, #9a6700, #bc4c00, transparent); }
         }
       </style>
       <div class="footer-container">

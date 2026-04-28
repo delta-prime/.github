@@ -29,7 +29,7 @@
           align-items: center;
         }
         .item-accent {
-          color: #58a6ff;
+          color: #d29922;
           margin-right: 8px;
           font-weight: bold;
         }
@@ -37,7 +37,7 @@
         @media (prefers-color-scheme: light) {
           .stack-container { color: #24292f; }
           .category { border-left-color: #d0d7de; }
-          .item-accent { color: #0969da; }
+          .item-accent { color: #9a6700; }
         }
       </style>
       <div class="stack-container">
