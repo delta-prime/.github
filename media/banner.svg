@@ -109,16 +109,20 @@
     </g>
 
     <!-- Main title -->
-    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f0f6fc" letter-spacing="-0.02em">DELTA PRIME</text>
+    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f0f6fc" letter-spacing="-0.02em">ENGRAMMIC</text>
 
     <!-- Cycling taglines -->
-    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em" filter="url(#bloom)">
-      COGNITION INFRASTRUCTURE. CONTEXT ROT'S CURE.
-      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="6s" repeatCount="indefinite"/>
+    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
+      MEMORY WITHOUT MEANING IS JUST METADATA.
+      <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.28;0.33;0.61;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
     </text>
-    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em" filter="url(#bloom2)">
-      BUILDING THE COGNITIVE BACKBONE FOR AI
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4;0.5;0.9;1" dur="6s" repeatCount="indefinite"/>
+    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
+      CONTEXT WITHOUT CURATION IS JUST CLUTTER.
+      <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.28;0.33;0.61;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
+      RECALL WITHOUT REASON IS JUST RETRIEVAL.
+      <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.28;0.33;0.61;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
     </text>
 
     <!-- Decorative line -->

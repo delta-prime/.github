@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="../media/banner.svg" alt="Delta Prime" width="800" />
+<img src="../media/banner.svg" alt="Engrammic" width="800" />
 
-### *Cognition without continuity is just computation.*
+### *Persistence without purpose is just pollution.*
 
 [The Problem](#the-problem) &nbsp;&bull;&nbsp; [Philosophy](#philosophy) &nbsp;&bull;&nbsp; [Cognitive Stack](#the-cognitive-stack) &nbsp;&bull;&nbsp; [Contact](mailto:khimanialiasgar@gmail.com)
 
@@ -11,9 +11,9 @@
 ## The Problem
 
 > *"Current systems create a category error: they apply cognitive decay to factual claims, or treat facts and experiences with identical update mechanics."*
-> &mdash; [Roynard, 2026](https://arxiv.org/abs/2604.11364)
+> - [Roynard, 2026](https://arxiv.org/abs/2604.11364)
 
-AI agents forget. Context windows overflow. Facts contradict without reconciliation. This is **context rot** &mdash; the systematic degradation of coherent reasoning as operational history grows.
+AI agents forget. Context windows overflow. Facts contradict without reconciliation. This is **context rot** - the systematic degradation of coherent reasoning as operational history grows.
 
 The root cause: applying uniform persistence to fundamentally different types of knowledge. Gaussian decay is correct for experiences. It's wrong for facts.
 
@@ -23,10 +23,10 @@ We implement [Roynard's four-layer cognitive decomposition](https://arxiv.org/ab
 
 | Layer | Persistence Semantics | Examples |
 |-------|----------------------|----------|
-| **Memory** | Ebbinghaus decay &mdash; experiences fade | "User asked about auth on 2026-04-21" |
-| **Knowledge** | Indefinite supersession &mdash; facts persist until contradicted | "OAuth tokens expire in 30 days" |
-| **Wisdom** | Evidence-gated revision &mdash; beliefs update on evidence, not time | "This team ships on Fridays" |
-| **Intelligence** | Ephemeral inference &mdash; per-session working memory | "For this query, I considered A, B, C" |
+| **Memory** | Ebbinghaus decay - experiences fade | "User asked about auth on 2026-04-21" |
+| **Knowledge** | Indefinite supersession - facts persist until contradicted | "OAuth tokens expire in 30 days" |
+| **Wisdom** | Evidence-gated revision - beliefs update on evidence, not time | "This team ships on Fridays" |
+| **Intelligence** | Ephemeral inference - per-session working memory | "For this query, I considered A, B, C" |
 
 Different knowledge types require different update mechanics. A fact shouldn't decay like a memory. A pattern shouldn't update like an observation. Contradictions create supersession edges, not silent overwrites.
 
@@ -54,7 +54,7 @@ flowchart LR
     style MEMORY fill:#0d1117,stroke:#58a6ff
 ```
 
-Raw experience storage: passages, events, utterances. Ebbinghaus decay &mdash; experiences fade with time.
+Raw experience storage: passages, events, utterances. Ebbinghaus decay - experiences fade with time.
 
 </td>
 <td width="50%">
@@ -74,7 +74,7 @@ flowchart LR
     style KNOW fill:#0d1117,stroke:#a371f7
 ```
 
-Extracted claims promoted to facts. Indefinite supersession &mdash; facts persist until contradicted, not until they age.
+Extracted claims promoted to facts. Indefinite supersession - facts persist until contradicted, not until they age.
 
 </td>
 </tr>
@@ -116,7 +116,7 @@ flowchart LR
     style INTEL fill:#0d1117,stroke:#f78166
 ```
 
-Per-session reasoning chains. Ephemeral by design &mdash; only crystallized conclusions survive the session.
+Per-session reasoning chains. Ephemeral by design - only crystallized conclusions survive the session.
 
 </td>
 </tr>
@@ -140,8 +140,8 @@ flowchart LR
 ```
 
 Cross-cutting capability spanning all four layers. Enables metacognition:
-- **Provenance**: "Why do I believe X?" &mdash; full citation chain to source
-- **Time-travel**: "What did I know last Tuesday?" &mdash; query historical state
+- **Provenance**: "Why do I believe X?" - full citation chain to source
+- **Time-travel**: "What did I know last Tuesday?" - query historical state
 - **Reflection**: Agents store observations about their own cognition
 
 Bi-temporal tracking means every fact knows *when it was true* vs *when we learned it*.
@@ -157,7 +157,7 @@ flowchart TB
         A2[Custom Agents]
     end
 
-    subgraph DELTA["Delta Prime"]
+    subgraph DELTA["Engrammic"]
         direction TB
         
         subgraph META["&nbsp;&nbsp;Meta-Memory&nbsp;&nbsp;"]
@@ -201,9 +201,9 @@ flowchart TB
 
 <div align="center">
 
-*We're building in stealth. First repositories drop soon.*
+*Early access available. First public repositories drop soon.*
 
-Watch this space &mdash; or [reach out](mailto:khimanialiasgar@gmail.com) if you'd like an early look.
+[Reach out](mailto:khimanialiasgar@gmail.com) if you'd like to integrate early.
 
 </div>
 
@@ -214,9 +214,9 @@ Watch this space &mdash; or [reach out](mailto:khimanialiasgar@gmail.com) if you
 </p>
 
 <p align="center">
-  <i>"Cognition infrastructure. Context rot's cure."</i>
+  <i>"Memory without meaning is just metadata."</i>
 </p>
 
 <p align="center">
-  <sub>Delta Prime Labs &bull; 2026</sub>
+  <sub>Engrammic &bull; 2026</sub>
 </p>
