@@ -78,7 +78,9 @@
     </circle>
 
     <!-- Main title with epsilon -->
-    <text x="50" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f4f1ec" letter-spacing="-0.02em">εngrammic</text>
+    <text x="50" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" letter-spacing="-0.02em">
+      <tspan fill="#a64b3c">ε</tspan><tspan fill="#f4f1ec">ngrammic</tspan>
+    </text>
 
     <!-- Cycling taglines -->
     <text x="50" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
