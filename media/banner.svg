@@ -77,44 +77,35 @@
       <animate attributeName="cy" values="160;140;160" dur="3.5s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Engrammic logo: [ε]^η -->
-    <g transform="translate(65, 100)" filter="url(#glow)">
-      <text x="-20" y="8" font-family="Georgia, serif" font-size="50" font-weight="300" fill="#f4f1ec">[</text>
-      <text x="-2" y="12" font-family="Georgia, serif" font-size="44" fill="#f4f1ec">ε</text>
-      <text x="28" y="8" font-family="Georgia, serif" font-size="50" font-weight="300" fill="#f4f1ec">]</text>
-      <!-- Eta as path (n with descender) -->
-      <path d="M54 -22 L54 -8 M54 -18 C58 -24 66 -24 70 -18 L70 -2" fill="none" stroke="#a64b3c" stroke-width="2.5" stroke-linecap="round"/>
-    </g>
-
-    <!-- Main title -->
-    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f4f1ec" letter-spacing="-0.02em">engrammic</text>
+    <!-- Main title with epsilon -->
+    <text x="50" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f4f1ec" letter-spacing="-0.02em">εngrammic</text>
 
     <!-- Cycling taglines -->
-    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
+    <text x="50" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
       MEMORY WITHOUT MEANING IS JUST METADATA.
       <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.28;0.33;0.61;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
     </text>
-    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
+    <text x="50" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
       CONTEXT WITHOUT CURATION IS JUST CLUTTER.
       <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.28;0.33;0.61;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
     </text>
-    <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
+    <text x="50" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
       RECALL WITHOUT REASON IS JUST RETRIEVAL.
       <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.28;0.33;0.61;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
     </text>
 
     <!-- Decorative line -->
-    <line x1="140" y1="140" x2="450" y2="140" stroke="url(#accent-grad)" stroke-width="1" opacity="0.5">
-      <animate attributeName="x2" values="140;450" dur="1s" fill="freeze"/>
+    <line x1="50" y1="140" x2="360" y2="140" stroke="url(#accent-grad)" stroke-width="1" opacity="0.5">
+      <animate attributeName="x2" values="50;360" dur="1s" fill="freeze"/>
     </line>
 
     <!-- Tech tags -->
     <g font-family="ui-monospace, 'SF Mono', monospace" font-size="11" fill="#a64b3c">
-      <text x="140" y="165">graph-rag</text>
-      <text x="220" y="165">bi-temporal</text>
-      <text x="310" y="165">mcp</text>
-      <text x="360" y="165">memgraph</text>
-      <text x="440" y="165">qdrant</text>
+      <text x="50" y="165">graph-rag</text>
+      <text x="130" y="165">bi-temporal</text>
+      <text x="220" y="165">mcp</text>
+      <text x="270" y="165">memgraph</text>
+      <text x="350" y="165">qdrant</text>
     </g>
 
     <!-- Corner accents -->
