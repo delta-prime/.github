@@ -77,24 +77,17 @@
       <animate attributeName="cy" values="160;140;160" dur="3.5s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Engrammic logo: [ε]^η as paths -->
-    <g transform="translate(50, 70)" filter="url(#glow)">
-      <!-- Left bracket -->
-      <path d="M0 0 L0 60 M0 0 L12 0 M0 60 L12 60" fill="none" stroke="#f4f1ec" stroke-width="3" stroke-linecap="square"/>
-      <!-- Epsilon (ε) -->
-      <path d="M42 8 C28 8 22 18 22 30 C22 42 28 52 42 52 M22 30 L38 30" fill="none" stroke="#f4f1ec" stroke-width="4" stroke-linecap="round"/>
-      <!-- Right bracket -->
-      <path d="M58 0 L58 60 M58 0 L46 0 M58 60 L46 60" fill="none" stroke="#f4f1ec" stroke-width="3" stroke-linecap="square"/>
-      <!-- Eta (η) superscript -->
-      <g transform="translate(64, -8)">
-        <path d="M0 0 L0 20 M0 6 C4 2 10 2 14 6 L14 20" fill="none" stroke="#a64b3c" stroke-width="2" stroke-linecap="round">
-          <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-        </path>
-      </g>
+    <!-- Engrammic logo: [ε]^η -->
+    <g transform="translate(65, 100)" filter="url(#glow)">
+      <text x="-20" y="8" font-family="Georgia, serif" font-size="50" font-weight="300" fill="#f4f1ec">[</text>
+      <text x="-2" y="12" font-family="Georgia, serif" font-size="44" fill="#f4f1ec">ε</text>
+      <text x="28" y="8" font-family="Georgia, serif" font-size="50" font-weight="300" fill="#f4f1ec">]</text>
+      <!-- Eta as path (n with descender) -->
+      <path d="M54 -22 L54 -8 M54 -18 C58 -24 66 -24 70 -18 L70 -2" fill="none" stroke="#a64b3c" stroke-width="2.5" stroke-linecap="round"/>
     </g>
 
     <!-- Main title -->
-    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f4f1ec" letter-spacing="-0.02em">ENGRAMMIC</text>
+    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f4f1ec" letter-spacing="-0.02em">engrammic</text>
 
     <!-- Cycling taglines -->
     <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
