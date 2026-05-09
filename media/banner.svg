@@ -77,35 +77,19 @@
       <animate attributeName="cy" values="160;140;160" dur="3.5s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Restored Cognitive Delta logo -->
+    <!-- Engrammic logo: [ε]^η -->
     <g transform="translate(80, 100)" filter="url(#glow)">
-      <!-- Outer segments - three-part delta -->
-      <path d="M-30 25 L0 -35 L30 25" fill="none" stroke="url(#accent-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-        <animate attributeName="stroke-dasharray" values="0,150;150,0" dur="2.5s" fill="freeze"/>
-      </path>
-      <!-- Bottom bar - tech style -->
-      <path d="M-30 25 L-8 25 M8 25 L30 25" fill="none" stroke="url(#accent-grad)" stroke-width="3" stroke-linecap="round">
-         <animate attributeName="opacity" values="0;1" dur="1s" begin="1.5s" fill="freeze"/>
-      </path>
-      <!-- Central core node -->
-      <circle cx="0" cy="5" r="4" fill="url(#accent-grad)">
-        <animate attributeName="r" values="3.5;5;3.5" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;1" dur="1s" begin="2s" fill="freeze"/>
-      </circle>
-      <!-- Connections to core -->
-      <g stroke="url(#accent-grad)" stroke-width="1.2" opacity="0.5">
-        <line x1="0" y1="-15" x2="0" y2="-4">
-          <animate attributeName="y2" values="-15;-4" dur="0.8s" begin="2.2s" fill="freeze"/>
-        </line>
-        <line x1="-12" y1="15" x2="-6" y2="8">
-          <animate attributeName="x2" values="-12;-6" dur="0.8s" begin="2.2s" fill="freeze"/>
-          <animate attributeName="y2" values="15;8" dur="0.8s" begin="2.2s" fill="freeze"/>
-        </line>
-        <line x1="12" y1="15" x2="6" y2="8">
-          <animate attributeName="x2" values="12;6" dur="0.8s" begin="2.2s" fill="freeze"/>
-          <animate attributeName="y2" values="15;8" dur="0.8s" begin="2.2s" fill="freeze"/>
-        </line>
-      </g>
+      <!-- Left bracket -->
+      <text x="-38" y="12" font-family="'Times New Roman', Georgia, serif" font-size="70" font-weight="300" fill="#f4f1ec">[</text>
+      <!-- Epsilon -->
+      <text x="-18" y="18" font-family="'Times New Roman', Georgia, serif" font-size="60" font-weight="400" fill="#f4f1ec">ε</text>
+      <!-- Right bracket -->
+      <text x="22" y="12" font-family="'Times New Roman', Georgia, serif" font-size="70" font-weight="300" fill="#f4f1ec">]</text>
+      <!-- Eta superscript -->
+      <text x="52" y="-18" font-family="'Times New Roman', Georgia, serif" font-size="28" font-weight="400" fill="#a64b3c">
+        η
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+      </text>
     </g>
 
     <!-- Main title -->
