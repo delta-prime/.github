@@ -1,20 +1,20 @@
 <svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#161b22"/>
+      <stop offset="0%" style="stop-color:#2b2b2b"/>
+      <stop offset="100%" style="stop-color:#1f1f1f"/>
     </linearGradient>
     <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f9f6f1">
-        <animate attributeName="stop-color" values="#f9f6f1;#8e96a3;#f9f6f1" dur="4s" repeatCount="indefinite"/>
+      <stop offset="0%" style="stop-color:#f4f1ec">
+        <animate attributeName="stop-color" values="#f4f1ec;#a64b3c;#f4f1ec" dur="4s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:#8e96a3">
-        <animate attributeName="stop-color" values="#8e96a3;#f9f6f1;#8e96a3" dur="4s" repeatCount="indefinite"/>
+      <stop offset="100%" style="stop-color:#8c2f2f">
+        <animate attributeName="stop-color" values="#8c2f2f;#f4f1ec;#8c2f2f" dur="4s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
     <linearGradient id="grid-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#30363d;stop-opacity:0.3"/>
-      <stop offset="100%" style="stop-color:#30363d;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#3d3d3d;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#3d3d3d;stop-opacity:0"/>
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="2" result="blur"/>
@@ -61,19 +61,19 @@
       <line x1="700" y1="0" x2="700" y2="200" opacity="0.2"/>
     </g>
 
-    <!-- Floating particles (Bone White / Frost Iron) -->
-    <circle cx="50" cy="30" r="2" fill="#f9f6f1" opacity="0.6">
+    <!-- Floating particles -->
+    <circle cx="50" cy="30" r="2" fill="#f4f1ec" opacity="0.6">
       <animate attributeName="cy" values="30;50;30" dur="3s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="750" cy="170" r="1.5" fill="#8e96a3" opacity="0.5">
+    <circle cx="750" cy="170" r="1.5" fill="#a64b3c" opacity="0.5">
       <animate attributeName="cy" values="170;150;170" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="680" cy="40" r="2" fill="#f9f6f1" opacity="0.4">
+    <circle cx="680" cy="40" r="2" fill="#f4f1ec" opacity="0.4">
       <animate attributeName="cy" values="40;60;40" dur="5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="120" cy="160" r="1.5" fill="#8e96a3" opacity="0.4">
+    <circle cx="120" cy="160" r="1.5" fill="#8c2f2f" opacity="0.4">
       <animate attributeName="cy" values="160;140;160" dur="3.5s" repeatCount="indefinite"/>
     </circle>
 
@@ -109,7 +109,7 @@
     </g>
 
     <!-- Main title -->
-    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f0f6fc" letter-spacing="-0.02em">ENGRAMMIC</text>
+    <text x="140" y="85" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="42" font-weight="700" fill="#f4f1ec" letter-spacing="-0.02em">ENGRAMMIC</text>
 
     <!-- Cycling taglines -->
     <text x="140" y="120" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace" font-size="14" font-weight="500" fill="url(#accent-grad)" letter-spacing="0.1em">
@@ -131,7 +131,7 @@
     </line>
 
     <!-- Tech tags -->
-    <g font-family="ui-monospace, 'SF Mono', monospace" font-size="11" fill="#8b949e">
+    <g font-family="ui-monospace, 'SF Mono', monospace" font-size="11" fill="#a64b3c">
       <text x="140" y="165">graph-rag</text>
       <text x="220" y="165">bi-temporal</text>
       <text x="310" y="165">mcp</text>
